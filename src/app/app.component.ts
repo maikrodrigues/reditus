@@ -7,4 +7,5 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'reditus';
+  imageUrl = '/assets/images/logo/uploads/pexels-amine-i̇spir-13200258.jpg';
 }

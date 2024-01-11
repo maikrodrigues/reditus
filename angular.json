@@ -90,7 +90,12 @@
             "inlineStyleLanguage": "scss",
             "assets": [
               "src/favicon.ico",
-              "src/assets"
+              "src/assets",
+              {
+                "glob": "**/*",
+                "input": "./src/images/uploads",
+                "output": "/assets/images/uploads/"
+              }
             ],
             "styles": [
               "src/styles.scss"

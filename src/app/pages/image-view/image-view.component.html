@@ -1,0 +1,13 @@
+<div class="container">
+  <div class="row">
+    <app-logo></app-logo>
+    <div class="d-flex justify-content-between py-5">
+      <h2>Listagem</h2>
+      <app-button [routerLink]="router"></app-button>
+      <!-- <app-upload class="upload" [routerLink]="router"></app-upload> -->
+    </div>
+    <div *ngFor="let image of imageUrl" class="col-md-4">
+      <app-image [imageUrl]="image.url"></app-image>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,14 @@
+:host {
+  .container {
+    margin: auto;
+  }
+  ::ng-deep button {
+    color: red;
+  }
+  h2 {
+    font-weight: 700;
+  }
+  .col-md-4 {
+    padding: 5px;
+  }
+}

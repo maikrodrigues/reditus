@@ -1,0 +1,7 @@
+<!-- <img *ngIf="file" [src]="file ? file.name : ''" alt="Imagem"> -->
+<div *ngIf="selectedImage">
+  <img [src]="selectedImage" alt="Imagem temporaria">
+  <button (click)="clearImage()" class="btn btn-danger mt-2">
+    <i class="fas fa-trash"></i> Excluir Imagem
+  </button>
+</div>

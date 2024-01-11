@@ -1,0 +1,19 @@
+:host {
+  display: flex;
+  flex-direction: column;
+  margin: 0 50px;
+  .container {
+    margin: auto;
+  }
+  h2 {
+    font-weight: 700;
+  }
+  app-image {
+    ::ng-deep.image-container img{
+      height: 70vh;
+    }
+  }
+  .background {
+    background-color: gainsboro;
+  }
+}

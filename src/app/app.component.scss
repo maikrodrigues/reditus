@@ -1,0 +1,13 @@
+:host {
+
+  ::ng-deep button {
+    color: red;
+  }
+
+  .image-container {
+    gap: 10px;
+    @media only screen and (max-width: 768px) {
+      flex-direction: column;
+    }
+  }
+}
