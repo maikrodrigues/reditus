@@ -27,4 +27,15 @@ export class ImageViewComponent implements OnInit {
       }
     );
   }
+
+  handleDeleteImage(id: number): void {
+    this.imageService.deleteImage(id).subscribe(
+      () => {
+        this.loadImages();
+      },
+      (error) => {
+        console.error('Erro ao excluir imagem', error);
+      }
+    );
+  }
 }

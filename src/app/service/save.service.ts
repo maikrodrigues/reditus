@@ -12,10 +12,10 @@ export class SaveService {
     const filename = `imagem_${timestamp}.png`;
     const blob = this.base64ToBlob(imageDataUrl.split(',')[1]);
     const formData = new FormData();
-    formData.append('imagem', blob, filename);
+    formData.append('image', blob, filename);
 
     // Use um endpoint no seu servidor para salvar a imagem no diretório desejado
-    this.http.post('http://localhost:3000/angular', formData).subscribe(
+    this.http.post('https://api.casadegoa.org/angular/save', formData).subscribe(
       (response) => {
         console.log('Imagem salva com sucesso:', response);
       },

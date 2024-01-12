@@ -7,7 +7,7 @@
       <!-- <app-upload class="upload" [routerLink]="router"></app-upload> -->
     </div>
     <div *ngFor="let image of imageUrl" class="col-md-4">
-      <app-image [imageUrl]="image.url"></app-image>
+      <app-image [imageUrl]="image.imagem" (deleteImage)="handleDeleteImage(image.id)"></app-image>
     </div>
   </div>
 </div>
